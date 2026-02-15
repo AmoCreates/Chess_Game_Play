@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:4000',
+        target: 'https://chess-game-backend-sigma.vercel.app/',
         changeOrigin: true,
       },
     },
