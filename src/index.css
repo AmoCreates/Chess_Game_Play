@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+* {
+    user-select: none;
+}
+
+.piece {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* This prevents the "gray box" selection look */
+    -webkit-user-drag: element; 
+}
+
+div.piece.white {
+    color: white;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+div.piece.black {
+    color: black;
+    text-shadow: 0 0 5px rgba(255,255,255,0.5);
+}
+
+.flipped {
+            transform: rotate(180deg);
+        }
