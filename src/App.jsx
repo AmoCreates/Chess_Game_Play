@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import axios from 'axios'
 
 import { io } from 'socket.io-client';
-const socket = io("https://chess-backend.onrender.com");
+const socket = io("https://chess-game-backend-1.onrender.com");
 
 import { Chess } from 'chess.js';
 const chess = new Chess();
